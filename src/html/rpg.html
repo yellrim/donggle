@@ -145,36 +145,35 @@
           </ul>
         </nav>
       </header>
-      <div class="container-fluid">
-        <!--  Row 1 -->
-        <h2 class="mb-3 d-inline-block text-719 fs-6 fw-semibold">동글 채광</h2>
-        <div class="p-3">
-          <p>|| 모든 유저가 채광을 즐길수 있습니다.</p>
-          <p>|| 근본 광부로 시작해 종결 곡괭이를 만들면 그때부터 전문 광부가 되어 곡괭이를 강화 할 수 있습니다.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">몬스터 사냥</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">무기 강화</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab2" data-bs-toggle="tab" data-bs-target="#contact2" type="button" role="tab" aria-controls="contact2" aria-selected="false">방어구 강화</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab3" data-bs-toggle="tab" data-bs-target="#contact3" type="button" role="tab" aria-controls="contact3" aria-selected="false">연금술사</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-0" id="myTabContent">
+                    <div class="tab-pane fade show py-3 active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      자원월드 몬스터 사냥 / 던전 몬스터 사냥
+                    </div>
+                    <div class="tab-pane fade py-3" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    </div>
+                    <div class="tab-pane fade py-3" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+                    </div>
+                    <div class="tab-pane fade py-3" id="contact3" role="tabpanel" aria-labelledby="contact-tab3">
+                    </div>
+                </div>
+            </div>
         </div>
-        <ul class="card p-3 mb-3">
-          <li class="m-0 d-flex flex-column align-items-baseline mb-2"> 
-            <div class="d-flex align-items-center mb-2">
-              <div class="yellow-circle bg-719 rounded-circle me-2"></div>
-              <p class="fs-6 mb-0"> 전문 광부</p>
-            </div>
-            <div class="w-100">
-              <p class="mb-2 ms-3 text-b5b">전문 광부가 되면 얻을 수 있는 곡괭이는 총 2가지 중 택 1 입니다.</p>
-              <br>
-              <div class="mb-5 col-12 col-md-6">
-                <p class="mb-2 ms-3 text-black fw-bolder fs-4">🌟 제련 곡괭이</p>
-                <p class="mb-2 ms-5 text-b5b">- 구리, 철, 금 광석을 캐면 광물이 제련된 상태로 드롭 됩니다.</p>
-                <img class="ps-5 w-100" src="../assets/images/upgrade/제련광부.gif" alt="제련광부">
-              </div>
-              <div class="col-12 col-md-6">
-                <p class="mb-2 ms-3 text-black fw-bolder fs-4">🌟 광맥 곡괭이</p>
-                <p class="mb-2 ms-5 text-b5b">- 광물을 캘 때 광맥이 한 번에 캐진 채로 드롭 됩니다.</p>
-                <img class="ps-5 w-100" src="../assets/images/upgrade/광맥광부.gif" alt="광맥광부">
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
     </div>
   </div>
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
