@@ -62,7 +62,7 @@ h1{
   background-color: #f8b719;
   color: white;
 }
-.nav-icon-hover:hover:before{
+.nav-icon-hover:hover:before, .sidebar-nav, .brand-logo{
   background-color: rgb(242 214 162 / 23%);
 }
 .img-box{
