@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>동글서버</title>
-  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="../assets/css/icons/donggle.png" />
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
   <link rel="stylesheet" href="../assets/css/common.css">
 </head>
@@ -81,6 +81,14 @@
                 <span class="hide-menu">생활 컨텐츠</span>
               </a>
             </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./fishing.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-heart"></i>
+                </span>
+                <span class="hide-menu">낚시 컨텐츠</span>
+              </a>
+            </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">동 글 후 원</span>
@@ -110,55 +118,127 @@
     <!--  Sidebar End -->
     
     <div class="body-wrapper">
-      <div class="container-fluid">
-        <!--  Row 1 -->
-        <div class="row">
-          <h2 class="mb-3 d-inline-block text-719 fs-6 fw-semibold">동글서버 유저 명령어</h2>
-          <ul class="row card p-3">
-            <li class="m-0 d-flex align-items-baseline mb-3"> 
-              <div class="yellow-circle bg-719 rounded-circle me-2"></div>
-              <div class="d-flex flex-column">
-                <p class="m-0 fw-semibold text-black mb-1">/수표:</p>
-                <p class="m-0"> 본인의 소지금내에서 수표로 발행</p>
-              </div>
-            </li>
-            <li class="m-0 d-flex align-items-baseline mb-3"> 
-              <div class="yellow-circle bg-719 rounded-circle me-2"></div>
-              <div class="d-flex flex-column">
-                <p class="m-0 fw-semibold text-black mb-1">/챗:</p>
-                <p class="m-0"> 전체채팅/지역채팅 활성화</p>
-              </div>
-            </li>
-            <li class="m-0 d-flex align-items-baseline mb-3"> 
-              <div class="yellow-circle bg-719 rounded-circle me-2"></div>
-              <div class="d-flex flex-column">
-                <p class="m-0 fw-semibold text-black mb-1">/귓 [유저이름]:</p>
-                <p class="m-0"> 해당 유저에게 귓속말 전송</p>
-              </div>
-            </li>
-            <li class="m-0 d-flex align-items-baseline mb-3"> 
-              <div class="yellow-circle bg-719 rounded-circle me-2"></div>
-              <div class="d-flex flex-column">
-                <p class="m-0 fw-semibold text-black mb-1">/추천:</p>
-                <p class="m-0"> 마인리스트 추천 바로가기 링크 표시</p>
-              </div>
-            </li>
-            <li class="m-0 d-flex align-items-baseline mb-3"> 
-              <div class="yellow-circle bg-719 rounded-circle me-2"></div>
-              <div class="d-flex flex-column">
-                <p class="m-0 fw-semibold text-black mb-1">/위키:</p>
-                <p class="m-0"> 동글서버 위키 바로가기 링크 표시</p>
-              </div>
-            </li>
-            <li class="m-0 d-flex align-items-baseline mb-3"> 
-              <div class="yellow-circle bg-719 rounded-circle me-2"></div>
-              <div class="d-flex flex-column">
-                <p class="m-0 fw-semibold text-black mb-1">/디스코드:</p>
-                <p class="m-0"> 동글서버 디스코드 바로가기 링크 표</p>
-              </div>
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
             </li>
           </ul>
-        </div>
+        </nav>
+      </header>
+      <div class="container-fluid">
+        <!--  Row 1 -->
+        <h2 class="mb-3 d-inline-block text-719 fs-6 fw-semibold">동글서버 유저 명령어</h2>
+        <ul class="row card p-3">
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/메뉴, Shift+F :</p>
+              <p class="m-0"> 메뉴창이 열립니다.</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/spawn, /스폰 :</p>
+              <p class="m-0"> 서버의 스폰으로 이동합니다.</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/야생 : </p>
+              <p class="m-0"> 야생 스폰으로 이동합니다.</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/장비숨김 :</p>
+              <p class="m-0"> 착용중인 장비가 숨겨집니다.</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/chestsort :</p>
+              <p class="m-0"> 간편한 창고정리 설정</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/수표 :</p>
+              <p class="m-0"> 본인의 소지금내에서 수표로 발행</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/sit, 반블럭 우클릭 : </p>
+              <p class="m-0"> 원하는블럭 또는 반블럭 위에 앉을 수 있습니다.</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/spin : </p>
+              <p class="m-0"> 행동, 모션</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/ley : </p>
+              <p class="m-0"> 행동, 모션</p>
+            </div>
+          </li>
+          <!--<li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/수표:</p>
+              <p class="m-0"> 본인의 소지금내에서 수표로 발행</p>
+            </div>
+          </li>
+           <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/챗:</p>
+              <p class="m-0"> 전체채팅/지역채팅 활성화</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/귓 [유저이름]:</p>
+              <p class="m-0"> 해당 유저에게 귓속말 전송</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/추천:</p>
+              <p class="m-0"> 마인리스트 추천 바로가기 링크 표시</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/위키:</p>
+              <p class="m-0"> 동글서버 위키 바로가기 링크 표시</p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-baseline mb-3"> 
+            <div class="yellow-circle bg-719 rounded-circle me-2"></div>
+            <div class="d-flex flex-column">
+              <p class="m-0 fw-semibold text-black mb-1">/디스코드:</p>
+              <p class="m-0"> 동글서버 디스코드 바로가기 링크 표</p>
+            </div>
+          </li> -->
+        </ul>
       </div>
     </div>
   </div>
