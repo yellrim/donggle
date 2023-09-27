@@ -29,6 +29,9 @@ h1{
 .text-d5d{
   color: #d5d5d5;
 }
+.text-b5b{
+  color: #b5b3b3;
+}
 
 .sidebar-nav ul .sidebar-item.selected>.sidebar-link, .sidebar-nav ul .sidebar-item.selected>.sidebar-link.active, .sidebar-nav ul .sidebar-item>.sidebar-link.active{
   background-color: #f8b719;
@@ -42,11 +45,30 @@ h1{
 .bg-719{
   background-color: #f8b719;
 }
-.text-719,.nav-link{
+.text-719,.nav-link,a:hover,.nav-link:focus, .nav-link:hover{
   color: #f8b719;
 }
 
 .yellow-circle{
   width: 8px;
   height: 8px;
+}
+
+.btn{
+  background-color: rgb(242 214 162 / 23%);
+}
+
+.btn:hover{
+  background-color: #f8b719;
+  color: white;
+}
+.nav-icon-hover:hover:before{
+  background-color: rgb(242 214 162 / 23%);
+}
+.img-box{
+  height: 300px;
+}
+.img-box-inner{
+  top: 64% !important;
+  left: 10% !important;
 }
